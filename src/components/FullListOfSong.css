@@ -1,0 +1,127 @@
+
+
+
+.fullListOfSong{
+    height: inherit;
+    padding: 50px;
+    padding-left: 100px ;
+    padding-right:100px;
+    background-color: black;
+    color: white;
+}
+
+.artistInfo{
+     display: flex;
+     margin-bottom: 10px;
+     padding: 30px;
+}
+
+.artists{
+    background-color: rgb(34, 28, 28);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.artist{
+    margin: 10px;
+}
+
+.artists h4{
+    padding-top: 10px;
+}
+
+.artist img{
+   height: 130px;
+   width: 170px;
+   border-radius: 50%;
+
+}
+
+.singleSong{
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.singleSong:hover{
+    border: 0.6px solid rgb(221, 200, 200);
+    border-radius: 20px;
+    background-color: rgb(32, 25, 25);
+}
+
+.singleSongInfo{
+    display: grid;
+    place-items: center;
+}
+
+ .songName h5{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.singleSongInfo img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+
+.singleSong .icons .MuiSvgIcon-root{
+    margin: 0px 10px;
+    font-size: 25px !important;
+}
+
+.singleSong .icons .MuiSvgIcon-root:hover{
+     color: rgb(196, 245, 245);
+     cursor: pointer;
+}
+
+
+.singleSong .singleSongInfo{
+    justify-content: space-around;
+    display: flex;
+}
+
+.singleSong .icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.artistInfo img{
+    margin-right: 20px;
+    width : 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgb(230, 12, 12);
+}
+
+.artistInfo .detail{
+    text-align:left;
+}
+
+.detail{
+    padding-left: 50px;
+}
+
+.fullListBody{
+   display: flex;
+}
+
+.fullListBody .artists{
+    width: 30%;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.fullListBody .allSongs{
+    /* border: 1px solid white; */
+    width: 70%;
+    min-height: 600px;
+    background-color: rgb(12, 11, 11);
+}

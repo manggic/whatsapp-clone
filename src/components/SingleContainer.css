@@ -1,0 +1,80 @@
+.SingleContainer {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.SingleContainer h4{
+  font-size: 17px;
+    color:rgb(167, 207, 233);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.songInfo {
+  color: bisque;
+
+  /* text-align: center; */
+  display: flex;
+
+}
+
+.songCard {
+  background-color: rgb(73, 70, 66);
+  margin-right: 10px;
+  border-radius: 15px ;
+  height: 200px;
+  width: 180px;
+  /* padding: 15px; */
+  position: relative;
+ 
+}
+
+.songCard:hover .PlayIcon{
+  
+   display: block !important;
+}
+
+.songCard:hover{
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+
+
+
+.PlayIcon{
+   color: rgb(41, 29, 29) ;
+   display: none !important;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   font-size: 50px !important;
+   transform: translate(-50%, -50%);
+   text-align: center; 
+}
+
+.showToPlay{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+
+.songCard img {
+  height: 130px;
+  width : 100%;
+  border-radius: 15px;
+}
+
+.songCard p {
+  font-size: 13px;
+  color: azure;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+

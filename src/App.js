@@ -13,35 +13,32 @@
 // }
 
 import React, { useState } from "react";
+import { MyContext } from "./components/context";
+import Header from "./components/Header";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-import Sidebar from "./Sidebar";
+import Home from "./components/Home";
 import "./App.css";
-import Chat from "./Chat";
-import Login from './login'
-import { useStateValue } from './StateProvider'
+import FullListOfSong from "./components/FullListOfSong";
 
 const App = () => {
-      // const [user, setUser] = useState(null);
-     const [{ user }, dispatch] = useStateValue()
+  const [data, setData] = useState({
+    name: "manish",
+    currentShow: null,
+  });
 
   return (
     <div className="app">
-      { !user? ( <Login /> ): (
-      <div className="app__body">
-        <Router>
-          <Sidebar />
-          <Switch>
-            <Route path="/" exact>
-              <Chat />
-            </Route>
-            <Route path="/room/:roomid" exact>
-              <Chat />
-            </Route>
-          </Switch>
-        </Router>
-      </div>
-      )}
+      <MyContext.Provider value={data}>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/fullList">
+            <Header />
+            <FullListOfSong />
+          </Route>
+        </Switch>
+      </MyContext.Provider>
     </div>
   );
 };
